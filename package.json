@@ -2,6 +2,7 @@
   "name": "todo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://parham7017.github.io/react-todo-project",
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.7.0",
     "bootstrap": "^4.3.1",
@@ -20,6 +21,8 @@
     "validator": "^12.0.0"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
